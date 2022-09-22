@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import pages.AlertsPage;
 import pages.HomePage;
 import pages.HorizontalSliderPage;
 import pages.KeyPressesPage;
@@ -15,6 +16,7 @@ public class BaseTest {
     protected HomePage homePage;
     protected KeyPressesPage keyPressesPage;
     protected HorizontalSliderPage horizontalSliderPage;
+    protected AlertsPage alertsPage;
 
     @BeforeMethod
     public void setUp() {
@@ -25,6 +27,7 @@ public class BaseTest {
         homePage = new HomePage(driver);
         keyPressesPage = new KeyPressesPage(driver);
         horizontalSliderPage = new HorizontalSliderPage(driver);
+        alertsPage = new AlertsPage(driver);
     }
 
     @AfterMethod(alwaysRun = true)

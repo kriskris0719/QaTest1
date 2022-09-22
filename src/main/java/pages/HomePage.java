@@ -10,7 +10,6 @@ public class HomePage {
     public HomePage(WebDriver driver) {
         this.driver = driver;
     }
-
     public void clickLinkPage(String text) {
         driver.findElement(By.linkText(text)).click();
     }
