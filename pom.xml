@@ -16,6 +16,7 @@
         <suite>TestSuite</suite>
     </properties>
 
+
     <dependencies>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
@@ -36,6 +37,8 @@
             <scope>compile</scope>
         </dependency>
     </dependencies>
+
+
     <build>
         <plugins>
             <plugin>
@@ -63,6 +66,5 @@
             </plugin>
         </plugins>
     </build>
-
     
 </project>

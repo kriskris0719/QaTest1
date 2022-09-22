@@ -2,20 +2,19 @@ package slider;
 
 import base.BaseTest;
 import org.testng.annotations.Test;
-import pages.HorizontalSliderPage;
 
 import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
 
 public class HorizontalSliderTests extends BaseTest {
 
+    private double rangeDegree = 2.0;
+    private String expectedValue = "2";
+
     @Test
-    public void testSlider(){
-        String value = "4";
-        HorizontalSliderPage sliderPage = homePage.clickHorizontalSlider();
-        sliderPage.moveSlider(value);
-        assertEquals(sliderPage.moveSlider(), value, "Slider value is incorrect!");
-
+    public void testSlider() {
+        homePage.clickLinkPage("Horizontal Slider");
+        horizontalSliderPage.moveSlider(rangeDegree);
+        assertEquals(horizontalSliderPage.getTextFromSlider(), String.valueOf(Math.round(rangeDegree)),
+                "Slider value is incorrect!");
     }
-
 }
