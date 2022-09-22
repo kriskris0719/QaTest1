@@ -4,10 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import pages.AlertsPage;
-import pages.HomePage;
-import pages.HorizontalSliderPage;
-import pages.KeyPressesPage;
+import pages.*;
 
 public class BaseTest {
 
@@ -17,6 +14,8 @@ public class BaseTest {
     protected KeyPressesPage keyPressesPage;
     protected HorizontalSliderPage horizontalSliderPage;
     protected AlertsPage alertsPage;
+    protected FileUploadPage fileUploadPage;
+
 
     @BeforeMethod
     public void setUp() {
@@ -28,6 +27,8 @@ public class BaseTest {
         keyPressesPage = new KeyPressesPage(driver);
         horizontalSliderPage = new HorizontalSliderPage(driver);
         alertsPage = new AlertsPage(driver);
+        fileUploadPage = new FileUploadPage(driver);
+
     }
 
     @AfterMethod(alwaysRun = true)
