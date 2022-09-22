@@ -11,6 +11,6 @@ public class FileUploadTests extends BaseTest {
     public void testFileUpload(){
         homePage.clickLinkPage("File Upload");
         fileUploadPage.uploadFile("C:\\GIT\\QaTest1\\src\\test\\resources\\chromedriver.exe");
-        assertEquals(fileUploadPage.getUploadedFiles(), "chromedriver", "Uploaded files incorrect");
+        assertEquals(fileUploadPage.getUploadedFiles(), "chromedriver.exe", "Uploaded files incorrect");
     }
 }

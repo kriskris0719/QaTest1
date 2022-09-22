@@ -15,6 +15,7 @@ public class BaseTest {
     protected HorizontalSliderPage horizontalSliderPage;
     protected AlertsPage alertsPage;
     protected FileUploadPage fileUploadPage;
+    protected ContextMenuPage contextMenuPage;
 
 
     @BeforeMethod
@@ -28,6 +29,7 @@ public class BaseTest {
         horizontalSliderPage = new HorizontalSliderPage(driver);
         alertsPage = new AlertsPage(driver);
         fileUploadPage = new FileUploadPage(driver);
+        contextMenuPage = new ContextMenuPage(driver);
 
     }
 
