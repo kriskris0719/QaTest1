@@ -16,6 +16,7 @@ public class BaseTest {
     protected AlertsPage alertsPage;
     protected FileUploadPage fileUploadPage;
     protected ContextMenuPage contextMenuPage;
+    protected WysiwygEditorPage wysiwygEditorPage;
 
 
     @BeforeMethod
@@ -30,6 +31,7 @@ public class BaseTest {
         alertsPage = new AlertsPage(driver);
         fileUploadPage = new FileUploadPage(driver);
         contextMenuPage = new ContextMenuPage(driver);
+        wysiwygEditorPage = new WysiwygEditorPage(driver);
 
     }
 
