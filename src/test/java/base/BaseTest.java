@@ -6,6 +6,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import pages.*;
 
+import java.util.concurrent.TimeUnit;
+
 public class BaseTest {
 
     private WebDriver driver;
@@ -19,6 +21,8 @@ public class BaseTest {
     protected WysiwygEditorPage wysiwygEditorPage;
     protected FramesPage framesPage;
     protected NestedFramesPage nestedFramesPage;
+    protected DynamicLoadingPage dynamicLoadingPage;
+    protected DynamicLoadingExample1Page dynamicLoadingExample1Page;
 
 
     @BeforeMethod
@@ -26,6 +30,7 @@ public class BaseTest {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
+        //driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.get("https://the-internet.herokuapp.com/");
         homePage = new HomePage(driver);
         keyPressesPage = new KeyPressesPage(driver);
@@ -36,6 +41,9 @@ public class BaseTest {
         wysiwygEditorPage = new WysiwygEditorPage(driver);
         framesPage = new FramesPage(driver);
         nestedFramesPage = new NestedFramesPage(driver);
+        dynamicLoadingPage = new DynamicLoadingPage(driver);
+        dynamicLoadingExample1Page = new DynamicLoadingExample1Page(driver);
+
 
     }
 
