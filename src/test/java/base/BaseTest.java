@@ -23,6 +23,7 @@ public class BaseTest {
     protected NestedFramesPage nestedFramesPage;
     protected DynamicLoadingPage dynamicLoadingPage;
     protected DynamicLoadingExample1Page dynamicLoadingExample1Page;
+    protected DynamicLoadingExample2Page dynamicLoadingExample2Page;
 
 
     @BeforeMethod
@@ -43,6 +44,7 @@ public class BaseTest {
         nestedFramesPage = new NestedFramesPage(driver);
         dynamicLoadingPage = new DynamicLoadingPage(driver);
         dynamicLoadingExample1Page = new DynamicLoadingExample1Page(driver);
+        dynamicLoadingExample2Page = new DynamicLoadingExample2Page(driver);
 
 
     }
