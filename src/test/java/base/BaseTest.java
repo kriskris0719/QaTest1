@@ -24,6 +24,9 @@ public class BaseTest {
     protected DynamicLoadingPage dynamicLoadingPage;
     protected DynamicLoadingExample1Page dynamicLoadingExample1Page;
     protected DynamicLoadingExample2Page dynamicLoadingExample2Page;
+    protected LargeAndDeepDomPage largeAndDeepDomPage;
+    protected InfiniteScrollPage infiniteScrollPage;
+
 
 
     @BeforeMethod
@@ -45,6 +48,9 @@ public class BaseTest {
         dynamicLoadingPage = new DynamicLoadingPage(driver);
         dynamicLoadingExample1Page = new DynamicLoadingExample1Page(driver);
         dynamicLoadingExample2Page = new DynamicLoadingExample2Page(driver);
+        largeAndDeepDomPage = new LargeAndDeepDomPage(driver);
+        infiniteScrollPage = new InfiniteScrollPage(driver);
+
 
 
     }
