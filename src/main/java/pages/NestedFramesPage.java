@@ -24,7 +24,7 @@ public class NestedFramesPage {
     public String getBottomFrameText(){
         driver.switchTo().frame(bottomFrame);
         String text = getFrameText();
-        driver.switchTo().parentFrame(); //exit top to main
+        driver.switchTo().parentFrame();
         return text;
     }
 
