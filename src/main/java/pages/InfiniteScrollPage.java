@@ -17,6 +17,7 @@ public class InfiniteScrollPage {
         var jsExecutor = (JavascriptExecutor) driver;
 
         while(getNumberOfParagraphsPresent() < index) {
+            jsExecutor.executeScript(script);
 
         }
     }
