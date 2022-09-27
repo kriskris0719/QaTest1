@@ -29,6 +29,8 @@ public class BaseTest {
     protected InfiniteScrollPage infiniteScrollPage;
     protected WindowManager windowManager;
     protected MultipleWindowsPage multipleWindowsPage;
+    protected ButtonPage buttonPage;
+
 
 
 
@@ -55,6 +57,7 @@ public class BaseTest {
         infiniteScrollPage = new InfiniteScrollPage(driver);
         windowManager = new WindowManager(driver);
         multipleWindowsPage = new MultipleWindowsPage(driver);
+        buttonPage = new ButtonPage(driver);
 
 
 
