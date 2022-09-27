@@ -5,6 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import pages.*;
+import utils.WindowManager;
 
 import java.util.concurrent.TimeUnit;
 
@@ -26,6 +27,8 @@ public class BaseTest {
     protected DynamicLoadingExample2Page dynamicLoadingExample2Page;
     protected LargeAndDeepDomPage largeAndDeepDomPage;
     protected InfiniteScrollPage infiniteScrollPage;
+    protected WindowManager windowManager;
+    protected MultipleWindowsPage multipleWindowsPage;
 
 
 
@@ -50,6 +53,8 @@ public class BaseTest {
         dynamicLoadingExample2Page = new DynamicLoadingExample2Page(driver);
         largeAndDeepDomPage = new LargeAndDeepDomPage(driver);
         infiniteScrollPage = new InfiniteScrollPage(driver);
+        windowManager = new WindowManager(driver);
+        multipleWindowsPage = new MultipleWindowsPage(driver);
 
 
 
@@ -58,6 +63,10 @@ public class BaseTest {
     @AfterMethod(alwaysRun = true)
     public void tearDown() {
         driver.quit();
+    }
+
+    public WindowManager getWindowManager(){
+        return new WindowManager(driver);
     }
 
 }

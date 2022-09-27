@@ -13,4 +13,5 @@ public class HomePage {
     public void clickLinkPage(String text) {
         driver.findElement(By.linkText(text)).click();
     }
+
 }
