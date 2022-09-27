@@ -50,6 +50,7 @@ public class BaseTest {
         driver.register(new EventReporter());
         goHome();
         setCookie();
+        deleteCookie();
         driver.manage().window().maximize();
         //driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.get("https://the-internet.herokuapp.com/");
@@ -109,10 +110,17 @@ public class BaseTest {
     }
 
     private void setCookie() {
-        Cookie cookie = new Cookie.Builder("tau", "123")
+        //Cookie cookie = new Cookie.Builder("tau", "123")
+              //  .domain("the-internet.herokuapp.com")
+               // .build();
+       // driver.manage().addCookie(cookie);
+    }
+
+    private void deleteCookie() {
+        Cookie cookie = new Cookie.Builder("optimizelyBuckets", "%7B%TD")
                 .domain("the-internet.herokuapp.com")
                 .build();
-        driver.manage().addCookie(cookie);
+        driver.manage().deleteCookie(cookie);
     }
 
 }
