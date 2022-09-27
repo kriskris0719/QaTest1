@@ -69,11 +69,12 @@ public class EventReporter implements WebDriverEventListener {
 
     @Override
     public void beforeFindBy(By by, WebElement webElement, WebDriver webDriver) {
-
+        System.out.println("Before finding element " + by);
     }
 
     @Override
     public void afterFindBy(By by, WebElement webElement, WebDriver webDriver) {
+        System.out.println("After finding element " + by);
 
     }
 
