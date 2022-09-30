@@ -3,6 +3,8 @@ package windows;
 import base.BaseTest;
 import org.testng.annotations.Test;
 
+import java.util.concurrent.TimeUnit;
+
 import static org.testng.Assert.assertTrue;
 
 public class WindowTests extends BaseTest {

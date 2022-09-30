@@ -1,6 +1,5 @@
 package base;
 
-import org.openqa.selenium.Cookie;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
@@ -9,6 +8,8 @@ import org.testng.annotations.BeforeMethod;
 import pages.*;
 import utils.EventReporter;
 import utils.WindowManager;
+
+import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
 
@@ -43,7 +44,7 @@ public class BaseTest {
         //setCookie();
         //deleteCookie();
         driver.manage().window().maximize();
-        //driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.get("https://the-internet.herokuapp.com/");
         homePage = new HomePage(driver);
         keyPressesPage = new KeyPressesPage(driver);
