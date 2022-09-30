@@ -15,7 +15,6 @@ public class ButtonPage {
     }
 
     public boolean isStartButtonDisplayed(){
-        driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
         return driver.findElement(startButton).isDisplayed();
     }
 
