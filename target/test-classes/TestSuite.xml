@@ -1,16 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="QaTest">
+<suite name="QaTest" parallel="tests" thread-count="15">
 
-    <test name="KeysTests">
+    <test name="Alerts">
+        <classes>
+            <class name="alerts.AlertTests"/>
+        </classes>
+    </test>
+    <test name="ContextMenu">
+        <classes>
+            <class name="contextMenu.ContextMenuTests"/>
+        </classes>
+    </test>
+    <test name="ExampleFirst">
+        <classes>
+            <class name="examples.WaitTests"/>
+        </classes>
+    </test>
+    <test name="ExampleSecond">
+        <classes>
+            <class name="examples.Wait2Tests"/>
+        </classes>
+    </test>
+    <test name="framesFirst">
+        <classes>
+            <class name="frames.FrameTests"/>
+        </classes>
+    </test>
+    <test name="framesSecond">
+        <classes>
+            <class name="frames.FramesTests"/>
+        </classes>
+    </test>
+    <test name="JavaScript">
+        <classes>
+            <class name="javascript.JavaScriptTests"/>
+        </classes>
+    </test>
+    <test name="Keys">
         <classes>
             <class name="keys.KeysTests"/>
         </classes>
     </test>
-    <test name="LoginTest">
+    <test name="Navigation">
+        <classes>
+            <class name="navigation.NavigationTests"/>
+        </classes>
+    </test>
+    <test name="Slider">
         <classes>
             <class name="slider.HorizontalSliderTests"/>
         </classes>
     </test>
-
+    <test name="Uploads">
+        <classes>
+            <class name="uploads.FileUploadTests"/>
+        </classes>
+    </test>
+    <test name="Windows">
+        <classes>
+            <class name="windows.WindowTests"/>
+        </classes>
+    </test>
 </suite>

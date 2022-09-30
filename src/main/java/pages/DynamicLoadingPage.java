@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
+import java.util.concurrent.TimeUnit;
+
 public class DynamicLoadingPage {
     private WebDriver driver;
     private String linkXpath_Format = ".//a[contains(text(), '%s')]";
@@ -15,10 +17,12 @@ public class DynamicLoadingPage {
     }
 
     public DynamicLoadingExample1Page clickExample1(){
+        driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
         driver.findElement(link_Example1).click();
         return new DynamicLoadingExample1Page(driver);
     }
     public DynamicLoadingExample2Page clickExample2(){
+        driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
         driver.findElement(link_Example2).click();
         return new DynamicLoadingExample2Page(driver);
     }
