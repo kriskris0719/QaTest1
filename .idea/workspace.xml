@@ -5,11 +5,57 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="654c2de3-f46e-455d-bef3-0d87dcbc5635" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/AlertsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/ButtonPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/ContextMenuPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/DynamicLoadingExample1Page.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/DynamicLoadingExample2Page.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/DynamicLoadingPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/FileUploadPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/FramesPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/HorizontalSliderPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/InfiniteScrollPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/KeyPressesPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/LargeAndDeepDomPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/MultipleWindowsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/NestedFramesPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/WysiwygEditorPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/EventReporter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/WindowManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/alerts/AlertTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/contextMenu/ContextMenuTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/examples/Wait2Tests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/examples/WaitTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/frames/FrameTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/frames/FramesTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/javascript/JavaScriptTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/keys/KeysTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/navigation/NavigationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/slider/HorizontalSliderTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/uploads/FileUploadTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/windows/WindowTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/TestSuite.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/chromedriver.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/screenshots/testBackSpace.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/screenshots/testPi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/screenshots/testWysiwyg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pages/HomePage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pages/HorizontalSliderPage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pages/KeyPressesPage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/TestSuite.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/base/BaseTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/chromedriver.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/keys/KeysTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/slider/HorizontalSliderTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/QaTest1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/QaTest1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/DynamicLoadingExample1Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/DynamicLoadingExample1Page.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/base/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/base/BaseTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +72,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Chapter13" />
+        <entry key="$PROJECT_DIR$" value="Chapter14HomePage" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
