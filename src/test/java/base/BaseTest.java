@@ -44,7 +44,7 @@ public class BaseTest {
         //setCookie();
         //deleteCookie();
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
         driver.get("https://the-internet.herokuapp.com/");
         homePage = new HomePage(driver);
         keyPressesPage = new KeyPressesPage(driver);
